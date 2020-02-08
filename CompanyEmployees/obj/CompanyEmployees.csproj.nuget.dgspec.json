@@ -1,0 +1,256 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/kant/Programming/Projects/CompanyEmployees/CompanyEmployees/CompanyEmployees.csproj": {}
+  },
+  "projects": {
+    "/home/kant/Programming/Projects/CompanyEmployees/CompanyEmployees/CompanyEmployees.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/kant/Programming/Projects/CompanyEmployees/CompanyEmployees/CompanyEmployees.csproj",
+        "projectName": "CompanyEmployees",
+        "projectPath": "/home/kant/Programming/Projects/CompanyEmployees/CompanyEmployees/CompanyEmployees.csproj",
+        "packagesPath": "/home/kant/.nuget/packages/",
+        "outputPath": "/home/kant/Programming/Projects/CompanyEmployees/CompanyEmployees/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/kant/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "/home/kant/Programming/Projects/CompanyEmployees/Entities/Entities.csproj": {
+                "projectPath": "/home/kant/Programming/Projects/CompanyEmployees/Entities/Entities.csproj"
+              },
+              "/home/kant/Programming/Projects/CompanyEmployees/LoggerService/LoggerService.csproj": {
+                "projectPath": "/home/kant/Programming/Projects/CompanyEmployees/LoggerService/LoggerService.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[3.1.1.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/kant/Programming/Projects/CompanyEmployees/Contracts/Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/kant/Programming/Projects/CompanyEmployees/Contracts/Contracts.csproj",
+        "projectName": "Contracts",
+        "projectPath": "/home/kant/Programming/Projects/CompanyEmployees/Contracts/Contracts.csproj",
+        "packagesPath": "/home/kant/.nuget/packages/",
+        "outputPath": "/home/kant/Programming/Projects/CompanyEmployees/Contracts/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/kant/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "NLog.Extensions.Logging": {
+              "target": "Package",
+              "version": "[1.6.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/kant/Programming/Projects/CompanyEmployees/Entities/Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/kant/Programming/Projects/CompanyEmployees/Entities/Entities.csproj",
+        "projectName": "Entities",
+        "projectPath": "/home/kant/Programming/Projects/CompanyEmployees/Entities/Entities.csproj",
+        "packagesPath": "/home/kant/.nuget/packages/",
+        "outputPath": "/home/kant/Programming/Projects/CompanyEmployees/Entities/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/kant/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/kant/Programming/Projects/CompanyEmployees/LoggerService/LoggerService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/kant/Programming/Projects/CompanyEmployees/LoggerService/LoggerService.csproj",
+        "projectName": "LoggerService",
+        "projectPath": "/home/kant/Programming/Projects/CompanyEmployees/LoggerService/LoggerService.csproj",
+        "packagesPath": "/home/kant/.nuget/packages/",
+        "outputPath": "/home/kant/Programming/Projects/CompanyEmployees/LoggerService/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/kant/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "/home/kant/Programming/Projects/CompanyEmployees/Contracts/Contracts.csproj": {
+                "projectPath": "/home/kant/Programming/Projects/CompanyEmployees/Contracts/Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "NLog.Extensions.Logging": {
+              "target": "Package",
+              "version": "[1.6.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

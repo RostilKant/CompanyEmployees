@@ -1,0 +1,11 @@
+/home/kant/Programming/Projects/CompanyEmployees/LoggerService/bin/Debug/netcoreapp3.1/LoggerService.deps.json
+/home/kant/Programming/Projects/CompanyEmployees/LoggerService/bin/Debug/netcoreapp3.1/LoggerService.dll
+/home/kant/Programming/Projects/CompanyEmployees/LoggerService/bin/Debug/netcoreapp3.1/LoggerService.pdb
+/home/kant/Programming/Projects/CompanyEmployees/LoggerService/bin/Debug/netcoreapp3.1/Contracts.dll
+/home/kant/Programming/Projects/CompanyEmployees/LoggerService/bin/Debug/netcoreapp3.1/Contracts.pdb
+/home/kant/Programming/Projects/CompanyEmployees/LoggerService/obj/Debug/netcoreapp3.1/LoggerService.csprojAssemblyReference.cache
+/home/kant/Programming/Projects/CompanyEmployees/LoggerService/obj/Debug/netcoreapp3.1/LoggerService.AssemblyInfoInputs.cache
+/home/kant/Programming/Projects/CompanyEmployees/LoggerService/obj/Debug/netcoreapp3.1/LoggerService.AssemblyInfo.cs
+/home/kant/Programming/Projects/CompanyEmployees/LoggerService/obj/Debug/netcoreapp3.1/LoggerService.csproj.CopyComplete
+/home/kant/Programming/Projects/CompanyEmployees/LoggerService/obj/Debug/netcoreapp3.1/LoggerService.dll
+/home/kant/Programming/Projects/CompanyEmployees/LoggerService/obj/Debug/netcoreapp3.1/LoggerService.pdb

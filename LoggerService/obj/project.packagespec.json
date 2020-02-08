@@ -1,0 +1,56 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "/home/kant/Programming/Projects/CompanyEmployees/LoggerService/LoggerService.csproj",
+    "projectName": "LoggerService",
+    "projectPath": "/home/kant/Programming/Projects/CompanyEmployees/LoggerService/LoggerService.csproj",
+    "outputPath": "/home/kant/Programming/Projects/CompanyEmployees/LoggerService/obj/",
+    "projectStyle": "PackageReference",
+    "originalTargetFrameworks": [
+      "netcoreapp3.1"
+    ],
+    "sources": {
+      "https://api.nuget.org/v3/index.json": {}
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "projectReferences": {
+          "/home/kant/Programming/Projects/CompanyEmployees/Contracts/Contracts.csproj": {
+            "projectPath": "/home/kant/Programming/Projects/CompanyEmployees/Contracts/Contracts.csproj"
+          }
+        }
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp3.1": {
+      "dependencies": {
+        "NLog.Extensions.Logging": {
+          "target": "Package",
+          "version": "[1.6.1, )"
+        }
+      },
+      "imports": [
+        "net461",
+        "net462",
+        "net47",
+        "net471",
+        "net472",
+        "net48"
+      ],
+      "assetTargetFallback": true,
+      "warn": true,
+      "frameworkReferences": {
+        "Microsoft.NETCore.App": {
+          "privateAssets": "all"
+        }
+      },
+      "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
+    }
+  }
+}

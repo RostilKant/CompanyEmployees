@@ -1,0 +1,8 @@
+/home/kant/Programming/Projects/CompanyEmployees/Entities/bin/Debug/netcoreapp3.1/Entities.deps.json
+/home/kant/Programming/Projects/CompanyEmployees/Entities/bin/Debug/netcoreapp3.1/Entities.dll
+/home/kant/Programming/Projects/CompanyEmployees/Entities/bin/Debug/netcoreapp3.1/Entities.pdb
+/home/kant/Programming/Projects/CompanyEmployees/Entities/obj/Debug/netcoreapp3.1/Entities.csprojAssemblyReference.cache
+/home/kant/Programming/Projects/CompanyEmployees/Entities/obj/Debug/netcoreapp3.1/Entities.AssemblyInfoInputs.cache
+/home/kant/Programming/Projects/CompanyEmployees/Entities/obj/Debug/netcoreapp3.1/Entities.AssemblyInfo.cs
+/home/kant/Programming/Projects/CompanyEmployees/Entities/obj/Debug/netcoreapp3.1/Entities.dll
+/home/kant/Programming/Projects/CompanyEmployees/Entities/obj/Debug/netcoreapp3.1/Entities.pdb

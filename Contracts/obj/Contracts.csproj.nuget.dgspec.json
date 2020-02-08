@@ -1,0 +1,64 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/kant/Programming/Projects/CompanyEmployees/Contracts/Contracts.csproj": {}
+  },
+  "projects": {
+    "/home/kant/Programming/Projects/CompanyEmployees/Contracts/Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/kant/Programming/Projects/CompanyEmployees/Contracts/Contracts.csproj",
+        "projectName": "Contracts",
+        "projectPath": "/home/kant/Programming/Projects/CompanyEmployees/Contracts/Contracts.csproj",
+        "packagesPath": "/home/kant/.nuget/packages/",
+        "outputPath": "/home/kant/Programming/Projects/CompanyEmployees/Contracts/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/kant/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "NLog.Extensions.Logging": {
+              "target": "Package",
+              "version": "[1.6.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
