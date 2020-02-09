@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/kant/Programming/Projects/CompanyEmployees/Contracts/Contracts.csproj": {}
+    "/home/kant/Programming/Projects/CompanyEmployees/Repository/Repository.csproj": {}
   },
   "projects": {
-    "/home/kant/Programming/Projects/CompanyEmployees/Contracts/Contracts.csproj": {
+    "/home/kant/Programming/Projects/CompanyEmployees/Repository/Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/kant/Programming/Projects/CompanyEmployees/Contracts/Contracts.csproj",
-        "projectName": "Contracts",
-        "projectPath": "/home/kant/Programming/Projects/CompanyEmployees/Contracts/Contracts.csproj",
+        "projectUniqueName": "/home/kant/Programming/Projects/CompanyEmployees/Repository/Repository.csproj",
+        "projectName": "Repository",
+        "projectPath": "/home/kant/Programming/Projects/CompanyEmployees/Repository/Repository.csproj",
         "packagesPath": "/home/kant/.nuget/packages/",
-        "outputPath": "/home/kant/Programming/Projects/CompanyEmployees/Contracts/obj/",
+        "outputPath": "/home/kant/Programming/Projects/CompanyEmployees/Repository/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/kant/.config/NuGet/NuGet.Config"
@@ -35,12 +35,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "dependencies": {
-            "NLog.Extensions.Logging": {
-              "target": "Package",
-              "version": "[1.6.1, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",

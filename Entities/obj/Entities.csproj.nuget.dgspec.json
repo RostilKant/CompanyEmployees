@@ -14,7 +14,7 @@
         "outputPath": "/home/kant/Programming/Projects/CompanyEmployees/Entities/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/kant/.nuget/NuGet/NuGet.Config"
+          "/home/kant/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"

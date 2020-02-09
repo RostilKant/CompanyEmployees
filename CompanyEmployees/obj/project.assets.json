@@ -362,6 +362,16 @@
         "runtime": {
           "bin/placeholder/LoggerService.dll": {}
         }
+      },
+      "Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Repository.dll": {}
+        }
       }
     }
   },
@@ -1028,6 +1038,11 @@
       "type": "project",
       "path": "../LoggerService/LoggerService.csproj",
       "msbuildProject": "../LoggerService/LoggerService.csproj"
+    },
+    "Repository/1.0.0": {
+      "type": "project",
+      "path": "../Repository/Repository.csproj",
+      "msbuildProject": "../Repository/Repository.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1036,7 +1051,8 @@
       "LoggerService >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 3.1.1",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.1",
-      "Npgsql.EntityFrameworkCore.PostgreSQL >= 3.1.1.2"
+      "Npgsql.EntityFrameworkCore.PostgreSQL >= 3.1.1.2",
+      "Repository >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1052,7 +1068,7 @@
       "outputPath": "/home/kant/Programming/Projects/CompanyEmployees/CompanyEmployees/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/kant/.nuget/NuGet/NuGet.Config"
+        "/home/kant/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -1068,6 +1084,9 @@
             },
             "/home/kant/Programming/Projects/CompanyEmployees/LoggerService/LoggerService.csproj": {
               "projectPath": "/home/kant/Programming/Projects/CompanyEmployees/LoggerService/LoggerService.csproj"
+            },
+            "/home/kant/Programming/Projects/CompanyEmployees/Repository/Repository.csproj": {
+              "projectPath": "/home/kant/Programming/Projects/CompanyEmployees/Repository/Repository.csproj"
             }
           }
         }

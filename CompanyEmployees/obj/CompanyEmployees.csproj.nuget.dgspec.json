@@ -14,7 +14,7 @@
         "outputPath": "/home/kant/Programming/Projects/CompanyEmployees/CompanyEmployees/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/kant/.nuget/NuGet/NuGet.Config"
+          "/home/kant/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -30,6 +30,9 @@
               },
               "/home/kant/Programming/Projects/CompanyEmployees/LoggerService/LoggerService.csproj": {
                 "projectPath": "/home/kant/Programming/Projects/CompanyEmployees/LoggerService/LoggerService.csproj"
+              },
+              "/home/kant/Programming/Projects/CompanyEmployees/Repository/Repository.csproj": {
+                "projectPath": "/home/kant/Programming/Projects/CompanyEmployees/Repository/Repository.csproj"
               }
             }
           }
@@ -90,7 +93,7 @@
         "outputPath": "/home/kant/Programming/Projects/CompanyEmployees/Contracts/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/kant/.nuget/NuGet/NuGet.Config"
+          "/home/kant/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -146,7 +149,7 @@
         "outputPath": "/home/kant/Programming/Projects/CompanyEmployees/Entities/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/kant/.nuget/NuGet/NuGet.Config"
+          "/home/kant/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -202,7 +205,7 @@
         "outputPath": "/home/kant/Programming/Projects/CompanyEmployees/LoggerService/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/kant/.nuget/NuGet/NuGet.Config"
+          "/home/kant/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -233,6 +236,56 @@
               "version": "[1.6.1, )"
             }
           },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/kant/Programming/Projects/CompanyEmployees/Repository/Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/kant/Programming/Projects/CompanyEmployees/Repository/Repository.csproj",
+        "projectName": "Repository",
+        "projectPath": "/home/kant/Programming/Projects/CompanyEmployees/Repository/Repository.csproj",
+        "packagesPath": "/home/kant/.nuget/packages/",
+        "outputPath": "/home/kant/Programming/Projects/CompanyEmployees/Repository/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/kant/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
           "imports": [
             "net461",
             "net462",

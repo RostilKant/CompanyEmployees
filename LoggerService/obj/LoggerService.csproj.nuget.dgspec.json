@@ -14,7 +14,7 @@
         "outputPath": "/home/kant/Programming/Projects/CompanyEmployees/Contracts/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/kant/.nuget/NuGet/NuGet.Config"
+          "/home/kant/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -70,7 +70,7 @@
         "outputPath": "/home/kant/Programming/Projects/CompanyEmployees/LoggerService/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/kant/.nuget/NuGet/NuGet.Config"
+          "/home/kant/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"

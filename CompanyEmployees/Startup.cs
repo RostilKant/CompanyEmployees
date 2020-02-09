@@ -28,6 +28,8 @@ namespace CompanyEmployees
             services.ConfigureKestrelIntegration();
             services.ConfigureLoggerService();
             services.ConfigurePostgreSqlContext(Configuration);
+            
+            services.ConfigureRepositoryManager();
             services.AddControllers();
         }
 
