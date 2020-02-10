@@ -9,11 +9,13 @@
       <e p="CompanyEmployees" t="IncludeRecursive">
         <e p="CompanyEmployees.csproj" t="IncludeRecursive" />
         <e p="Controllers" t="Include">
+          <e p="CompaniesController.cs" t="Include" />
           <e p="WeatherForecastController.cs" t="Include" />
         </e>
         <e p="Extensions" t="Include">
           <e p="ServiceExtensions.cs" t="Include" />
         </e>
+        <e p="MappingProfile.cs" t="Include" />
         <e p="Migrations" t="Include">
           <e p="20200208133959_DatabaseCreate.Designer.cs" t="Include" />
           <e p="20200208133959_DatabaseCreate.cs" t="Include" />
@@ -63,6 +65,9 @@
           <e p="CompanyConfiguration.cs" t="Include" />
           <e p="EmployeeConfiguration.cs" t="Include" />
         </e>
+        <e p="DataTransferObjects" t="Include">
+          <e p="CompanyDto.cs" t="Include" />
+        </e>
         <e p="Entities.csproj" t="IncludeRecursive" />
         <e p="Models" t="Include">
           <e p="Company.cs" t="Include" />
@@ -86,6 +91,21 @@
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
               <e p="LoggerService.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="Repository" t="IncludeRecursive">
+        <e p="CompanyRepository.cs" t="Include" />
+        <e p="EmployeeRepository.cs" t="Include" />
+        <e p="Repository.csproj" t="IncludeRecursive" />
+        <e p="RepositoryBase.cs" t="Include" />
+        <e p="RepositoryManager.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="Repository.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
         </e>

@@ -14,7 +14,11 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "projectReferences": {}
+        "projectReferences": {
+          "/home/kant/Programming/Projects/CompanyEmployees/Entities/Entities.csproj": {
+            "projectPath": "/home/kant/Programming/Projects/CompanyEmployees/Entities/Entities.csproj"
+          }
+        }
       }
     },
     "warningProperties": {

@@ -1,0 +1,13 @@
+/home/kant/Programming/Projects/CompanyEmployees/Repository/bin/Debug/netcoreapp3.1/Repository.deps.json
+/home/kant/Programming/Projects/CompanyEmployees/Repository/bin/Debug/netcoreapp3.1/Repository.dll
+/home/kant/Programming/Projects/CompanyEmployees/Repository/bin/Debug/netcoreapp3.1/Repository.pdb
+/home/kant/Programming/Projects/CompanyEmployees/Repository/bin/Debug/netcoreapp3.1/Contracts.dll
+/home/kant/Programming/Projects/CompanyEmployees/Repository/bin/Debug/netcoreapp3.1/Entities.dll
+/home/kant/Programming/Projects/CompanyEmployees/Repository/bin/Debug/netcoreapp3.1/Contracts.pdb
+/home/kant/Programming/Projects/CompanyEmployees/Repository/bin/Debug/netcoreapp3.1/Entities.pdb
+/home/kant/Programming/Projects/CompanyEmployees/Repository/obj/Debug/netcoreapp3.1/Repository.csprojAssemblyReference.cache
+/home/kant/Programming/Projects/CompanyEmployees/Repository/obj/Debug/netcoreapp3.1/Repository.AssemblyInfoInputs.cache
+/home/kant/Programming/Projects/CompanyEmployees/Repository/obj/Debug/netcoreapp3.1/Repository.AssemblyInfo.cs
+/home/kant/Programming/Projects/CompanyEmployees/Repository/obj/Debug/netcoreapp3.1/Repository.csproj.CopyComplete
+/home/kant/Programming/Projects/CompanyEmployees/Repository/obj/Debug/netcoreapp3.1/Repository.dll
+/home/kant/Programming/Projects/CompanyEmployees/Repository/obj/Debug/netcoreapp3.1/Repository.pdb

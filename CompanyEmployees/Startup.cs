@@ -1,4 +1,5 @@
 using System.IO;
+using AutoMapper;
 using CompanyEmployees.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -28,7 +29,7 @@ namespace CompanyEmployees
             services.ConfigureKestrelIntegration();
             services.ConfigureLoggerService();
             services.ConfigurePostgreSqlContext(Configuration);
-            
+            services.AddAutoMapper(typeof(Startup));
             services.ConfigureRepositoryManager();
             services.AddControllers();
         }

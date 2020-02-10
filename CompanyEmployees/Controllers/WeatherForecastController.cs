@@ -13,25 +13,34 @@ namespace CompanyEmployees.Controllers
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
-        private RepositoryManager _repository;
-        public WeatherForecastController(RepositoryManager repository)
+        private IRepositoryManager _repository;
+
+        public WeatherForecastController(IRepositoryManager repository)
         {
             _repository = repository;
+
         }
 
-       
-
-        /*[HttpGet]
-        public IEnumerable<WeatherForecast> Get()
+        [HttpGet]
+        public ActionResult<IEnumerable<string>> Get()
         {
-            var rng = new Random();
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-                {
-                    Date = DateTime.Now.AddDays(index),
-                    TemperatureC = rng.Next(-20, 55),
-                    Summary = Summaries[rng.Next(Summaries.Length)]
-                })
-                .ToArray();
-        }*/
+
+            return new string[] {"value1", "value2"};
+        }
     }
+
+
+
+    /*[HttpGet]
+    public IEnumerable<WeatherForecast> Get()
+    {
+        var rng = new Random();
+        return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+            {
+                Date = DateTime.Now.AddDays(index),
+                TemperatureC = rng.Next(-20, 55),
+                Summary = Summaries[rng.Next(Summaries.Length)]
+            })
+            .ToArray();
+    }*/
 }

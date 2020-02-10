@@ -46,6 +46,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -53,6 +57,10 @@
               "version": "[3.1.1, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[3.1.1, )"
             },
@@ -103,7 +111,11 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "/home/kant/Programming/Projects/CompanyEmployees/Entities/Entities.csproj": {
+                "projectPath": "/home/kant/Programming/Projects/CompanyEmployees/Entities/Entities.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -275,7 +287,14 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "/home/kant/Programming/Projects/CompanyEmployees/Contracts/Contracts.csproj": {
+                "projectPath": "/home/kant/Programming/Projects/CompanyEmployees/Contracts/Contracts.csproj"
+              },
+              "/home/kant/Programming/Projects/CompanyEmployees/Entities/Entities.csproj": {
+                "projectPath": "/home/kant/Programming/Projects/CompanyEmployees/Entities/Entities.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

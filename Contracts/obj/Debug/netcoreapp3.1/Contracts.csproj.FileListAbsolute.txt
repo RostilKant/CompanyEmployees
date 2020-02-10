@@ -6,3 +6,6 @@
 /home/kant/Programming/Projects/CompanyEmployees/Contracts/obj/Debug/netcoreapp3.1/Contracts.AssemblyInfo.cs
 /home/kant/Programming/Projects/CompanyEmployees/Contracts/obj/Debug/netcoreapp3.1/Contracts.dll
 /home/kant/Programming/Projects/CompanyEmployees/Contracts/obj/Debug/netcoreapp3.1/Contracts.pdb
+/home/kant/Programming/Projects/CompanyEmployees/Contracts/bin/Debug/netcoreapp3.1/Entities.dll
+/home/kant/Programming/Projects/CompanyEmployees/Contracts/bin/Debug/netcoreapp3.1/Entities.pdb
+/home/kant/Programming/Projects/CompanyEmployees/Contracts/obj/Debug/netcoreapp3.1/Contracts.csproj.CopyComplete

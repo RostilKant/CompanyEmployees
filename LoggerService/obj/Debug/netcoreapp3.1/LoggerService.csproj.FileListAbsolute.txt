@@ -9,3 +9,5 @@
 /home/kant/Programming/Projects/CompanyEmployees/LoggerService/obj/Debug/netcoreapp3.1/LoggerService.csproj.CopyComplete
 /home/kant/Programming/Projects/CompanyEmployees/LoggerService/obj/Debug/netcoreapp3.1/LoggerService.dll
 /home/kant/Programming/Projects/CompanyEmployees/LoggerService/obj/Debug/netcoreapp3.1/LoggerService.pdb
+/home/kant/Programming/Projects/CompanyEmployees/LoggerService/bin/Debug/netcoreapp3.1/Entities.dll
+/home/kant/Programming/Projects/CompanyEmployees/LoggerService/bin/Debug/netcoreapp3.1/Entities.pdb
