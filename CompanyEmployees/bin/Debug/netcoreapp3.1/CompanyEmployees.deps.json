@@ -1887,7 +1887,8 @@
       },
       "Entities/1.0.0": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "3.1.1"
+          "Microsoft.EntityFrameworkCore": "3.1.1",
+          "Newtonsoft.Json": "11.0.2"
         },
         "runtime": {
           "Entities.dll": {}

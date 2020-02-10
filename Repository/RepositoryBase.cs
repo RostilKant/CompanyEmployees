@@ -9,31 +9,31 @@ namespace Repository
 {
     public class RepositoryBase<T> : IRepositoryBase<T> where T : class
     {
-        protected RepositoryContext RepositoryContext;
+        private readonly RepositoryContext _repositoryContext;
 
-        public RepositoryBase(RepositoryContext repositoryContext)
+        protected RepositoryBase(RepositoryContext repositoryContext)
         {
-            RepositoryContext = repositoryContext;
+            _repositoryContext = repositoryContext;
             
         }
 
         public IQueryable<T> FindAll(bool trackChanges) =>
             !trackChanges
-                ? RepositoryContext.Set<T>()
+                ? _repositoryContext.Set<T>()
                     .AsNoTracking()
-                : RepositoryContext.Set<T>();
+                : _repositoryContext.Set<T>();
 
         public IQueryable<T> FindByCondition(Expression<Func<T, bool>> expression,
             bool trackChanges) =>
             !trackChanges
-                ? RepositoryContext.Set<T>()
+                ? _repositoryContext.Set<T>()
                     .Where(expression)
                     .AsNoTracking()
-                : RepositoryContext.Set<T>()
+                : _repositoryContext.Set<T>()
                     .Where(expression);
 
-        public void Create(T entity) => RepositoryContext.Set<T>().Add(entity);
-        public void Update(T entity) => RepositoryContext.Set<T>().Update(entity);
-        public void Delete(T entity) => RepositoryContext.Set<T>().Remove(entity);
+        public void Create(T entity) => _repositoryContext.Set<T>().Add(entity);
+        public void Update(T entity) => _repositoryContext.Set<T>().Update(entity);
+        public void Delete(T entity) => _repositoryContext.Set<T>().Remove(entity);
     }
 }

@@ -12,9 +12,9 @@ namespace CompanyEmployees.Controllers
     [ApiController]
     public class CompaniesController : ControllerBase
     {
-        private IRepositoryManager _repository;
+        private readonly IRepositoryManager _repository;
         private ILoggerManager _logger;
-        private IMapper _mapper;
+        private readonly IMapper _mapper;
 
         public CompaniesController(ILoggerManager logger, IRepositoryManager repository, IMapper mapper)
         {
@@ -26,18 +26,9 @@ namespace CompanyEmployees.Controllers
         [HttpGet]
         public IActionResult GetCompanies()
         {
-            try
-            {
-                var companies = _repository.Company.GetAllCompanies(false);
+            var companies = _repository.Company.GetAllCompanies(false);
                 var companiesDto = _mapper.Map<IEnumerable<CompanyDto>>(companies);
                 return Ok(companiesDto);
-            }
-            catch (Exception e)
-            {
-                _logger.LogError($"Something went wrong in {nameof(GetCompanies)} at action {e}");
-                return StatusCode(500, "Internal Server Error");
-            }
-
         }
     }
 }

@@ -13,6 +13,7 @@
           <e p="WeatherForecastController.cs" t="Include" />
         </e>
         <e p="Extensions" t="Include">
+          <e p="ExceptionMiddlewareExtensions.cs" t="Include" />
           <e p="ServiceExtensions.cs" t="Include" />
         </e>
         <e p="MappingProfile.cs" t="Include" />
@@ -69,6 +70,9 @@
           <e p="CompanyDto.cs" t="Include" />
         </e>
         <e p="Entities.csproj" t="IncludeRecursive" />
+        <e p="ErrorModel" t="Include">
+          <e p="ErrorDetails.cs" t="Include" />
+        </e>
         <e p="Models" t="Include">
           <e p="Company.cs" t="Include" />
           <e p="Employee.cs" t="Include" />
