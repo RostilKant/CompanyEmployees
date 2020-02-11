@@ -74,8 +74,10 @@
         <e p="DataTransferObjects" t="Include">
           <e p="CompanyDto.cs" t="Include" />
           <e p="CompanyForCreationDto.cs" t="Include" />
+          <e p="CompanyForUpdateDto.cs" t="Include" />
           <e p="EmployeeDto.cs" t="Include" />
           <e p="EmployeeForCreationDto.cs" t="Include" />
+          <e p="EmployeeForUpdateDto.cs" t="Include" />
         </e>
         <e p="Entities.csproj" t="IncludeRecursive" />
         <e p="ErrorModel" t="Include">
