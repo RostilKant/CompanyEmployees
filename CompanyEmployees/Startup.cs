@@ -36,7 +36,8 @@ namespace CompanyEmployees
             {
                 config.RespectBrowserAcceptHeader = true;
                 config.ReturnHttpNotAcceptable = true;
-            }).AddCustomCsvFormatter()
+            }).AddNewtonsoftJson()
+                .AddCustomCsvFormatter()
                 .AddXmlDataContractSerializerFormatters();
         }
 
