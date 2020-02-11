@@ -10,6 +10,7 @@
         <e p="CompanyEmployees.csproj" t="IncludeRecursive" />
         <e p="Controllers" t="Include">
           <e p="CompaniesController.cs" t="Include" />
+          <e p="EmployeesController.cs" t="Include" />
           <e p="WeatherForecastController.cs" t="Include" />
         </e>
         <e p="Extensions" t="Include">
@@ -68,6 +69,7 @@
         </e>
         <e p="DataTransferObjects" t="Include">
           <e p="CompanyDto.cs" t="Include" />
+          <e p="EmployeeDto.cs" t="Include" />
         </e>
         <e p="Entities.csproj" t="IncludeRecursive" />
         <e p="ErrorModel" t="Include">

@@ -14,6 +14,8 @@ namespace CompanyEmployees
                     opt =>
                         opt.MapFrom(c => 
                             string.Join(", ",c.Country,c.Address)));
+            
+            CreateMap<Employee, EmployeeDto>();
         }
     }
 }
