@@ -84,5 +84,27 @@ namespace CompanyEmployees.Controllers
 
             return CreatedAtRoute("GetEmployeeForCompany", new {companyId, id = employeeDto.Id}, employeeDto);
         }
+
+        [HttpDelete("{id}")]
+        public IActionResult DeleteEmployeeFromCompany(Guid companyId,Guid id)
+        {
+            var company = _repository.Company.GetCompany(companyId, false);
+            if (company == null)
+            {
+                _logger.LogInfo($"Company with id: {companyId} doesn't exist in the database.");
+                return NotFound();
+            }
+
+            var employee = _repository.Employee.GetEmployee(companyId, id, false);
+            if (employee == null)
+            {
+                _logger.LogInfo($"Employee with id: {id} doesn't exist in the database.");
+                return NotFound();
+            }
+
+            _repository.Employee.DeleteEmployee(employee);
+            _repository.Save();
+            return NoContent();
+        }
     }
 }
