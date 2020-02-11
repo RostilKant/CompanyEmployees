@@ -26,6 +26,9 @@
           <e p="20200208142016_InitData.cs" t="Include" />
           <e p="RepositoryContextModelSnapshot.cs" t="Include" />
         </e>
+        <e p="ModelBinders" t="Include">
+          <e p="ArrayModelBinder.cs" t="Include" />
+        </e>
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="launchSettings.json" t="Include" />
@@ -70,7 +73,9 @@
         </e>
         <e p="DataTransferObjects" t="Include">
           <e p="CompanyDto.cs" t="Include" />
+          <e p="CompanyForCreationDto.cs" t="Include" />
           <e p="EmployeeDto.cs" t="Include" />
+          <e p="EmployeeForCreationDto.cs" t="Include" />
         </e>
         <e p="Entities.csproj" t="IncludeRecursive" />
         <e p="ErrorModel" t="Include">

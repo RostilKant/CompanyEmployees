@@ -16,6 +16,10 @@ namespace CompanyEmployees
                             string.Join(", ",c.Country,c.Address)));
             
             CreateMap<Employee, EmployeeDto>();
+
+            CreateMap<CompanyForCreationDto, Company>();
+
+            CreateMap<EmployeeForCreationDto, Employee>();
         }
     }
 }
