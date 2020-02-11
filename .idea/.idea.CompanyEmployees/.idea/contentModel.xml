@@ -13,6 +13,7 @@
           <e p="EmployeesController.cs" t="Include" />
           <e p="WeatherForecastController.cs" t="Include" />
         </e>
+        <e p="CsvOutputFormatter.cs" t="Include" />
         <e p="Extensions" t="Include">
           <e p="ExceptionMiddlewareExtensions.cs" t="Include" />
           <e p="ServiceExtensions.cs" t="Include" />

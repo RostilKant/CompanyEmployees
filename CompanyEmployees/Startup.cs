@@ -32,7 +32,13 @@ namespace CompanyEmployees
             services.ConfigurePostgreSqlContext(Configuration);
             services.AddAutoMapper(typeof(Startup));
             services.ConfigureRepositoryManager();
-            services.AddControllers();
+            services.AddControllers(config =>
+            {
+                config.RespectBrowserAcceptHeader = true;
+                config.ReturnHttpNotAcceptable = true;
+            }).AddCustomCsvFormatter()
+                .AddXmlDataContractSerializerFormatters();
+                
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
