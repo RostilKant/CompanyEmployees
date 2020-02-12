@@ -1,5 +1,6 @@
 using System.IO;
 using AutoMapper;
+using CompanyEmployees.ActionFilters;
 using CompanyEmployees.Extensions;
 using Contracts;
 using Microsoft.AspNetCore.Builder;
@@ -34,6 +35,9 @@ namespace CompanyEmployees
             services.AddAutoMapper(typeof(Startup));
             services.ConfigureRepositoryManager();
             services.Configure<ApiBehaviorOptions>(opt => opt.SuppressModelStateInvalidFilter = true);
+            services.AddScoped<ValidationFilterAttribute>();
+            services.AddScoped<ValidateCompanyExistsAttribute>();
+            services.AddScoped<ValidateEmployeeForCompanyAttribute>();
             services.AddControllers(config =>
             {
                 config.RespectBrowserAcceptHeader = true;
