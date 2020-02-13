@@ -9,7 +9,8 @@
       "Repository/1.0.0": {
         "dependencies": {
           "Contracts": "1.0.0",
-          "Entities": "1.0.0"
+          "Entities": "1.0.0",
+          "System.Linq.Dynamic.Core": "1.0.20"
         },
         "runtime": {
           "Repository.dll": {}
@@ -231,6 +232,14 @@
           }
         }
       },
+      "System.Linq.Dynamic.Core/1.0.20": {
+        "runtime": {
+          "lib/netcoreapp2.1/System.Linq.Dynamic.Core.dll": {
+            "assemblyVersion": "1.0.20.0",
+            "fileVersion": "1.0.20.0"
+          }
+        }
+      },
       "Contracts/1.0.0": {
         "dependencies": {
           "Entities": "1.0.0",
@@ -410,6 +419,13 @@
       "sha512": "sha512-oJjw3uFuVDJiJNbCD8HB4a2p3NYLdt1fiT5OGsPLw+WTOuG0KpP4OXelMmmVKpClueMsit6xOlzy4wNKQFiBLg==",
       "path": "system.diagnostics.diagnosticsource/4.7.0",
       "hashPath": "system.diagnostics.diagnosticsource.4.7.0.nupkg.sha512"
+    },
+    "System.Linq.Dynamic.Core/1.0.20": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2vIL+8LXG+AORiNfUHAl8ZRQdJ6KbSNwRfmbDjweJfQYW691ZqdnibQIdeKInl1X77gbL6EoSXbatK/hSn9GWw==",
+      "path": "system.linq.dynamic.core/1.0.20",
+      "hashPath": "system.linq.dynamic.core.1.0.20.nupkg.sha512"
     },
     "Contracts/1.0.0": {
       "type": "project",

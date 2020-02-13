@@ -1,5 +1,10 @@
+using System;
 using System.Linq;
 using Entities.Models;
+using System.Linq.Dynamic.Core;
+using System.Reflection;
+using System.Text;
+using Repository.Extensions.Utilities;
 
 namespace Repository.Extensions
 {
@@ -13,5 +18,17 @@ namespace Repository.Extensions
             string.IsNullOrEmpty(term)
                 ? employees
                 : employees.Where(e => e.Name.ToLower().Contains(term.Trim().ToLower()));
+
+        public static IQueryable<Employee> Sort(this IQueryable<Employee> employees, string
+            orderByQueryString)
+        {
+            if (string.IsNullOrWhiteSpace(orderByQueryString))
+                return employees.OrderBy(e => e.Name);
+            var orderQuery = OrderQueryBuilder.CreateOrderQuery<Employee>(orderByQueryString);
+            if (string.IsNullOrWhiteSpace(orderQuery))
+                return employees.OrderBy(e => e.Name);
+            return employees.OrderBy(orderQuery);
+        }
+            
     }
 }

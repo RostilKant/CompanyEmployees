@@ -12,10 +12,16 @@ namespace Entities
             get => _pageSize;
             set => _pageSize = (value > MaxPageSize) ? MaxPageSize : value;
         }
+        
+        public string OrderBy { get; set; }
     }
 
     public class EmployeeParameters : RequestParameters
     {
+        public EmployeeParameters()
+        {
+            OrderBy = "name";
+        }
         public uint MinAge { get; set; }
         public uint MaxAge { get; set; } = uint.MaxValue;
 
