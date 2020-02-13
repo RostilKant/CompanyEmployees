@@ -19,6 +19,7 @@ namespace Entities
         public uint MinAge { get; set; }
         public uint MaxAge { get; set; } = uint.MaxValue;
 
+        public string SearchTerm { get; set; }
         public bool ValidAgeRange => MinAge < MaxAge;
         
     }
