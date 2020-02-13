@@ -95,6 +95,11 @@
           <e p="Employee.cs" t="Include" />
         </e>
         <e p="RepositoryContext.cs" t="Include" />
+        <e p="RequestFeatures" t="Include">
+          <e p="Metadata.cs" t="Include" />
+          <e p="PagedList.cs" t="Include" />
+          <e p="RequestParametrs.cs" t="Include" />
+        </e>
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
