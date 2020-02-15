@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Entities
+namespace Entities.RequestFeatures
 {
     public class PagedList<T> : List<T>
     {

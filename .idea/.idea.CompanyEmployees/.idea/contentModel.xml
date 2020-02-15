@@ -10,6 +10,7 @@
         <e p="ActionFilters" t="Include">
           <e p="ValidateCompanyExistsAttribute.cs" t="Include" />
           <e p="ValidateEmployeeForCompanyAttribute.cs" t="Include" />
+          <e p="ValidateMediaTypeAttribute.cs" t="Include" />
           <e p="ValidationFilterAttribute.cs" t="Include" />
         </e>
         <e p="CompanyEmployees.csproj" t="IncludeRecursive" />
@@ -39,6 +40,9 @@
           <e p="launchSettings.json" t="Include" />
         </e>
         <e p="Startup.cs" t="Include" />
+        <e p="Utility" t="Include">
+          <e p="EmployeeLinks.cs" t="Include" />
+        </e>
         <e p="WeatherForecast.cs" t="Include" />
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
@@ -91,9 +95,17 @@
         <e p="ErrorModel" t="Include">
           <e p="ErrorDetails.cs" t="Include" />
         </e>
+        <e p="LinkModels" t="Include">
+          <e p="Link.cs" t="Include" />
+          <e p="LinkCollectionWrapper.cs" t="Include" />
+          <e p="LinkResourceBase.cs" t="Include" />
+          <e p="LinkResponse.cs" t="Include" />
+        </e>
         <e p="Models" t="Include">
           <e p="Company.cs" t="Include" />
           <e p="Employee.cs" t="Include" />
+          <e p="Entity.cs" t="Include" />
+          <e p="ShapedEntity.cs" t="Include" />
         </e>
         <e p="RepositoryContext.cs" t="Include" />
         <e p="RequestFeatures" t="Include">

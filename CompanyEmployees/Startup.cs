@@ -1,7 +1,7 @@
-using System.IO;
 using AutoMapper;
 using CompanyEmployees.ActionFilters;
 using CompanyEmployees.Extensions;
+using CompanyEmployees.Utility;
 using Contracts;
 using Entities.DataTransferObjects;
 using Microsoft.AspNetCore.Builder;
@@ -13,6 +13,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using NLog;
 using Repository.DataShaping;
+using System.IO;
 
 namespace CompanyEmployees
 {
@@ -20,34 +21,44 @@ namespace CompanyEmployees
     {
         public Startup(IConfiguration configuration)
         {
-            LogManager.LoadConfiguration(string.Concat(Directory.GetCurrentDirectory(),
-                "/nlog.config"));
+            LogManager.LoadConfiguration(string.Concat(Directory.GetCurrentDirectory(), "/nlog.config"));
             Configuration = configuration;
         }
 
-        private IConfiguration Configuration { get; }
+        public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.ConfigureCors();
-            services.ConfigureKestrelIntegration();
             services.ConfigureLoggerService();
-            services.ConfigurePostgreSqlContext(Configuration);
-            services.AddAutoMapper(typeof(Startup));
             services.ConfigureRepositoryManager();
-            services.Configure<ApiBehaviorOptions>(opt => opt.SuppressModelStateInvalidFilter = true);
+            services.AddAutoMapper(typeof(Startup));
             services.AddScoped<ValidationFilterAttribute>();
             services.AddScoped<ValidateCompanyExistsAttribute>();
             services.AddScoped<ValidateEmployeeForCompanyAttribute>();
-            services.AddScoped <IDataShaper<EmployeeDto>, DataShaper<EmployeeDto>>();
-            services.AddControllers(config =>
+            services.ConfigurePostgreSqlContext(Configuration);
+            services.AddScoped<IDataShaper<EmployeeDto>, DataShaper<EmployeeDto>>();
+
+            services.AddScoped<ValidateMediaTypeAttribute>();
+
+            services.AddScoped<EmployeeLinks>();
+
+            services.Configure<ApiBehaviorOptions>(options =>
             {
-                config.RespectBrowserAcceptHeader = true;
-                config.ReturnHttpNotAcceptable = true;
-            }).AddNewtonsoftJson()
-                .AddCustomCsvFormatter()
-                .AddXmlDataContractSerializerFormatters();
+                options.SuppressModelStateInvalidFilter = true;
+            });
+
+            services.AddControllers(config =>
+                {
+                    config.RespectBrowserAcceptHeader = true;
+                    config.ReturnHttpNotAcceptable = true;
+                }).AddNewtonsoftJson()
+                .AddXmlDataContractSerializerFormatters()
+                .AddCustomCsvFormatter();
+            
+            services.AddCustomMediaTypes();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -61,25 +72,26 @@ namespace CompanyEmployees
             {
                 app.UseHsts();
             }
-            app.ConfigureExceptionHandler(logger);
-            
-            app.UseHttpsRedirection();
 
+            app.ConfigureExceptionHandler(logger);
+            app.UseHttpsRedirection();
             app.UseStaticFiles();
 
             app.UseCors("CorsPolicy");
 
-            app.UseForwardedHeaders(new ForwardedHeadersOptions()
+            app.UseForwardedHeaders(new ForwardedHeadersOptions
             {
                 ForwardedHeaders = ForwardedHeaders.All
             });
-            
+
             app.UseRouting();
 
             app.UseAuthorization();
-            
 
-            app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllers();
+            });
         }
     }
 }

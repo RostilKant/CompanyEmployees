@@ -1,4 +1,4 @@
-namespace Entities
+namespace Entities.RequestFeatures
 {
     public abstract class RequestParameters
     {

@@ -40,7 +40,7 @@ namespace CompanyEmployees.ActionFilters
             
             if(employee == null)
             {
-                _logger.LogInfo($"Employee with id: " +
+                _logger.LogInfo($"EmployeeLinks with id: " +
                                 $"{id} doesn't exist in the database.");
                 context.Result = new NotFoundResult();
             }

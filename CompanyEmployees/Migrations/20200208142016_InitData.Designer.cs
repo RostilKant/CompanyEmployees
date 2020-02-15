@@ -62,7 +62,7 @@ namespace CompanyEmployees.Migrations
                         });
                 });
 
-            modelBuilder.Entity("Entities.Models.Employee", b =>
+            modelBuilder.Entity("Entities.Models.EmployeeLinks", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -118,7 +118,7 @@ namespace CompanyEmployees.Migrations
                         });
                 });
 
-            modelBuilder.Entity("Entities.Models.Employee", b =>
+            modelBuilder.Entity("Entities.Models.EmployeeLinks", b =>
                 {
                     b.HasOne("Entities.Models.Company", "Company")
                         .WithMany("Employees")

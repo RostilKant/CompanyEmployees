@@ -46,7 +46,7 @@ namespace CompanyEmployees.Migrations
                     b.ToTable("Companies");
                 });
 
-            modelBuilder.Entity("Entities.Models.Employee", b =>
+            modelBuilder.Entity("Entities.Models.EmployeeLinks", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -76,7 +76,7 @@ namespace CompanyEmployees.Migrations
                     b.ToTable("Employees");
                 });
 
-            modelBuilder.Entity("Entities.Models.Employee", b =>
+            modelBuilder.Entity("Entities.Models.EmployeeLinks", b =>
                 {
                     b.HasOne("Entities.Models.Company", "Company")
                         .WithMany("Employees")

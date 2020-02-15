@@ -1,4 +1,4 @@
-namespace Entities
+namespace Entities.RequestFeatures
 {
     public class Metadata
     {
