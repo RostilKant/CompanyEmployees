@@ -23,7 +23,7 @@ namespace CompanyEmployees.Controllers
         private readonly ILoggerManager _logger;
         private readonly IMapper _mapper;
         private readonly EmployeeLinks _employeeLinks;
-
+        
         public EmployeesController(IRepositoryManager repository, ILoggerManager logger, IMapper mapper, EmployeeLinks employeeLinks)
         {
             _repository = repository;
@@ -33,6 +33,7 @@ namespace CompanyEmployees.Controllers
         }
 
         [HttpGet]
+        [HttpHead]
         [ServiceFilter(typeof(ValidateMediaTypeAttribute))]
         public async Task<IActionResult> GetEmployeesForCompany(Guid companyId, [FromQuery] EmployeeParameters employeeParameters)
         {
