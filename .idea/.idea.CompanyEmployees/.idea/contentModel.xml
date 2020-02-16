@@ -16,7 +16,9 @@
         <e p="CompanyEmployees.csproj" t="IncludeRecursive" />
         <e p="Controllers" t="Include">
           <e p="CompaniesController.cs" t="Include" />
+          <e p="CompaniesV2Controller.cs" t="Include" />
           <e p="EmployeesController.cs" t="Include" />
+          <e p="RootController.cs" t="Include" />
           <e p="WeatherForecastController.cs" t="Include" />
         </e>
         <e p="CsvOutputFormatter.cs" t="Include" />

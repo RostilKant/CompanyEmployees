@@ -13,12 +13,13 @@ using Repository;
 
 namespace CompanyEmployees.Controllers
 {
+    [ApiVersion("1.0")]
     [Route("api/[controller]")]
     [ApiController]
     public class CompaniesController : ControllerBase
     {
         private readonly IRepositoryManager _repository;
-        private ILoggerManager _logger;
+        private readonly ILoggerManager _logger;
         private readonly IMapper _mapper;
 
         public CompaniesController(ILoggerManager logger, IRepositoryManager repository, IMapper mapper)
@@ -28,7 +29,7 @@ namespace CompanyEmployees.Controllers
             _mapper = mapper;
         }
 
-        [HttpGet]
+        [HttpGet(Name = "GetCompanies")]
         public async Task<IActionResult> GetCompanies()
         {
             var companies = await _repository.Company.GetAllCompaniesAsync(false);
@@ -36,7 +37,7 @@ namespace CompanyEmployees.Controllers
                 return Ok(companiesDto);
         }
 
-        [HttpGet("{id}", Name = "CompanyById")]
+        [HttpGet("{id}", Name = "GetCompany")]
         public async Task<IActionResult> GetCompany(Guid id)
         {
             var company = await _repository.Company.GetCompanyAsync(id, false);
@@ -52,7 +53,7 @@ namespace CompanyEmployees.Controllers
             }
         }
 
-        [HttpPost]
+        [HttpPost(Name = "CreateCompany")]
         [ServiceFilter(typeof(ValidationFilterAttribute))]
         public async Task<IActionResult> CreateCompany([FromBody] CompanyForCreationDto company)
         {

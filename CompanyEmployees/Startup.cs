@@ -58,6 +58,8 @@ namespace CompanyEmployees
                 .AddCustomCsvFormatter();
             
             services.AddCustomMediaTypes();
+            
+            services.ConfigureVersioning();
 
         }
 
