@@ -132,3 +132,4 @@
 /home/kant/Programming/Projects/CompanyEmployees/CompanyEmployees/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Mvc.Versioning.dll
 /home/kant/Programming/Projects/CompanyEmployees/CompanyEmployees/obj/Debug/netcoreapp3.1/CompanyEmployees.MvcApplicationPartsAssemblyInfo.cs
 /home/kant/Programming/Projects/CompanyEmployees/CompanyEmployees/bin/Debug/netcoreapp3.1/Marvin.Cache.Headers.dll
+/home/kant/Programming/Projects/CompanyEmployees/CompanyEmployees/bin/Debug/netcoreapp3.1/AspNetCoreRateLimit.dll

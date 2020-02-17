@@ -14,6 +14,7 @@ using Microsoft.Extensions.Hosting;
 using NLog;
 using Repository.DataShaping;
 using System.IO;
+using AspNetCoreRateLimit;
 
 namespace CompanyEmployees
 {
@@ -59,6 +60,12 @@ namespace CompanyEmployees
             
             services.AddCustomMediaTypes();
 
+            services.AddMemoryCache();
+            
+            services.ConfigureRateLimitingOptions();
+            services.AddHttpContextAccessor();
+            services.ConfigureHttpCacheHeaders();
+            
             services.AddResponseCaching();
             services.ConfigureVersioning();
 
@@ -90,6 +97,7 @@ namespace CompanyEmployees
             app.UseResponseCaching();
             app.UseHttpCacheHeaders();
             
+            app.UseIpRateLimiting();
             app.UseRouting();
 
             app.UseAuthorization();
