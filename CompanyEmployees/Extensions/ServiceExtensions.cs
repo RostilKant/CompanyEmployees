@@ -2,6 +2,7 @@ using System.Linq;
 using Contracts;
 using Entities;
 using LoggerService;
+using Marvin.Cache.Headers;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Formatters;
@@ -82,6 +83,16 @@ namespace CompanyEmployees.Extensions
                 opt.ApiVersionReader = new HeaderApiVersionReader("api-version");
             });
         }
-        
+
+        public static void ConfigureHttpCacheHeaders(this IServiceCollection services) =>
+            services.AddHttpCacheHeaders(
+                (opt) => 
+                { 
+                    opt.MaxAge = 300;
+                    opt.CacheLocation = CacheLocation.Private;
+                },
+                (opt) => { opt.MustRevalidate = true; }
+                );
+
     }
 }

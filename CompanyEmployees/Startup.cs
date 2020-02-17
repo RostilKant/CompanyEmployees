@@ -58,7 +58,8 @@ namespace CompanyEmployees
                 .AddCustomCsvFormatter();
             
             services.AddCustomMediaTypes();
-            
+
+            services.AddResponseCaching();
             services.ConfigureVersioning();
 
         }
@@ -86,6 +87,9 @@ namespace CompanyEmployees
                 ForwardedHeaders = ForwardedHeaders.All
             });
 
+            app.UseResponseCaching();
+            app.UseHttpCacheHeaders();
+            
             app.UseRouting();
 
             app.UseAuthorization();
