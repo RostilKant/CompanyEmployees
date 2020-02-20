@@ -33,6 +33,14 @@
   "frameworks": {
     "netcoreapp3.1": {
       "dependencies": {
+        "Microsoft.IdentityModel.Tokens": {
+          "target": "Package",
+          "version": "[5.5.0, )"
+        },
+        "System.IdentityModel.Tokens.Jwt": {
+          "target": "Package",
+          "version": "[5.5.0, )"
+        },
         "System.Linq.Dynamic.Core": {
           "target": "Package",
           "version": "[1.0.20, )"

@@ -7,7 +7,7 @@ namespace CompanyEmployees.ActionFilters
 {
     public class ValidationFilterAttribute : IActionFilter
     {
-        private ILoggerManager _logger;
+        private readonly ILoggerManager _logger;
 
         public ValidationFilterAttribute(ILoggerManager logger)
         {

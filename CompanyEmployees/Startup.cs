@@ -15,6 +15,7 @@ using NLog;
 using Repository.DataShaping;
 using System.IO;
 using AspNetCoreRateLimit;
+using Repository;
 
 namespace CompanyEmployees
 {
@@ -65,6 +66,11 @@ namespace CompanyEmployees
             services.ConfigureRateLimitingOptions();
             services.AddHttpContextAccessor();
             services.ConfigureHttpCacheHeaders();
+
+            services.AddAuthentication();
+            services.ConfigureIdentity();
+            services.ConfigureJwt(Configuration);
+            services.AddScoped<IAuthenticationManager, AuthenticationManager>();
             
             services.AddResponseCaching();
             services.ConfigureVersioning();
@@ -100,6 +106,7 @@ namespace CompanyEmployees
             app.UseIpRateLimiting();
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
