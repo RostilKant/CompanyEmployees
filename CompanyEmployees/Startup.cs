@@ -72,6 +72,8 @@ namespace CompanyEmployees
             services.ConfigureJwt(Configuration);
             services.AddScoped<IAuthenticationManager, AuthenticationManager>();
             
+            services.ConfigureSwagger();
+            
             services.AddResponseCaching();
             services.ConfigureVersioning();
 
@@ -89,6 +91,13 @@ namespace CompanyEmployees
                 app.UseHsts();
             }
 
+            app.UseSwagger();
+            app.UseSwaggerUI(s =>
+            {
+                s.SwaggerEndpoint("/swagger/v1/swagger.json", "Code Maze API v1");
+                s.SwaggerEndpoint("/swagger/v2/swagger.json", "Code Maze API v2");
+            });
+            
             app.ConfigureExceptionHandler(logger);
             app.UseHttpsRedirection();
             app.UseStaticFiles();
